@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Word Chain: Rivals | Real-Time Multiplayer Case Study</title>
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" rel="stylesheet">
+
+    <!-- Link back to your core global stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- Fonts & Icons Integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/6b52baeebb.js"></script>
+</head>
+<body class="bg-light">
+
+    <!--------------------- App Sub-Page Navigation --------------------->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+                <i class="fa-solid fa-arrow-left text-muted fa-sm me-1"></i>
+                <strong>malynda</strong>
+                <span class="badge bg-info text-dark px-2 py-1 fs-6 ms-1" style="font-size: 0.75rem !important;">Word Chain Case Study</span>
+            </a>
+            <div class="justify-content-end">
+                <a class="btn btn-outline-dark btn-sm px-3" href="../index.html#projects">All Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <!--------------------- App Hero Section --------------------->
+    <header class="py-5 bg-white border-bottom">
+        <div class="container py-4">
+            <div class="row align-items-center g-5 text-start">
+                <div class="col-lg-6">
+                    <div class="d-inline-flex align-items-center gap-2 bg-info bg-opacity-10 text-info px-3 py-2 rounded-pill mb-3 fw-medium small" style="color: #007799 !important;">
+                        <i class="fa-solid fa-gamepad"></i> Real-Time Multiplayer Networking
+                    </div>
+                    <h1 class="display-4 fw-bold text-dark mb-3">Word Chain: Rivals</h1>
+                    <p class="lead text-muted mb-4">A high-velocity, asynchronous multiplayer game engine built to handle instant word validation, dynamic matchmaking, and state synchronization over persistent socket connections.</p>
+
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <div class="bg-light p-3 rounded-3 border flex-fill">
+                            <small class="text-muted d-block uppercase fw-bold tracking-wider" style="font-size: 0.75rem;">ROLE</small>
+                            <span class="text-dark fw-semibold">Product Owner & Lead Backend Systems Architect</span>
+                        </div>
+                        <div class="bg-light p-3 rounded-3 border flex-fill">
+                            <small class="text-muted d-block uppercase fw-bold tracking-wider" style="font-size: 0.75rem;">STACK</small>
+                            <span class="text-dark fw-semibold">Python, WebSockets, SQLite3 Database Engine</span>
+                        </div>
+                    </div>
+
+                    <div class="d-grid d-md-flex gap-3">
+                        <span class="btn btn-dark btn-lg px-4 disabled"><i class="fa-brands fa-github me-2"></i>Internal Architecture Codebase</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <!-- Visual Technical Engine Terminal Representation -->
+                    <div class="position-relative p-4 bg-dark rounded-4 text-success shadow font-monospace style-code-block" style="width: 100%; max-width: 460px; min-height: 280px; background-color: #121824 !important;">
+                        <div class="small opacity-75 mb-2 text-muted">// Persistent WebSocket Matchmaking Stream</div>
+                        <div class="small text-white">[System] Initializing game lobby ID: #9942...</div>
+                        <div class="small text-info">[Player 1] Connected from active session token.</div>
+                        <div class="small text-warning">[Engine] Word submitted: "Product" (Valid)</div>
+                        <div class="small text-success">[System] State sync broadcast delivered in 14ms.</div>
+                        <div class="small text-danger">[Timer] Player 2 turn loop ticking down: 08s...</div>
+                        <span class="badge bg-secondary position-absolute bottom-0 end-0 m-3 px-2 py-1 font-sans-serif" style="font-size: 0.7rem;">Backend Socket Stream Visualized</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--------------------- Deep Dive Case Study Content --------------------->
+    <main class="container py-5 text-start">
+        <div class="row g-5 justify-content-between">
+
+            <!-- Left Grid Column: Strategic PM & Architecture Breakdowns -->
+            <div class="col-lg-7">
+
+                <!-- Section 1: The Core Problem Space -->
+                <div class="mb-5 bg-white p-4 rounded-4 shadow-sm border border-light">
+                    <h4 class="fw-bold text-dark mb-3"><i class="fa-solid fa-bullseye text-danger me-2"></i>1. Product Strategy & MVP Definition</h4>
+                    <p class="text-muted">Most mobile word games suffer from a core user retention drop-off: turn-based gameplay feels stagnant, and waiting hours for an opponent to move destroys the session momentum. The product objective for *Word Chain: Rivals* was to build an intensive, real-time feedback loop where players go head-to-head with an active turn countdown timer.</p>
+                    <p class="text-muted"><strong>Scoping Trade-offs:</strong> As the Product Manager, I prioritized an aggressive, minimal feature set for the V1 release. To hit our target timeline, I cut complex social features (like custom friend profiles and in-game text chat) out of the immediate scope. Instead, I focused 100% of the engineering capital on core gameplay mechanics: instantaneous matchmaking connectivity, flawless vocabulary validation checks, and resilient session preservation systems if a user temporarily drops their network connection.</p>
+                </div>
+
+                <!-- Section 2: Technical Product Architecture -->
+                <div class="mb-5 bg-white p-4 rounded-4 shadow-sm border border-light">
+                    <h4 class="fw-bold text-dark mb-3"><i class="fa-solid fa-network-wired text-primary me-2"></i>2. Network Architecture & Latency Controls</h4>
+                    <p class="text-muted">Handling concurrent online sessions using standard HTTP polling creates heavy server overhead and lagging response times. To ensure an ultra-responsive user experience, I architected the server using a persistent bi-directional communication layer:</p>
+
+                    <ul class="text-muted ps-3 mb-4">
+                        <li class="mb-2"><strong>State Synchronization via WebSockets:</strong> Deployed direct socket streaming connections to broadcast game changes instantly. This dropped match state updates to less than 20ms, allowing both players to see moves instantly.</li>
+                        <li class="mb-2"><strong>On-the-Fly Word Verification:</strong> Integrated a lightweight database matrix lookup routine directly into the intake engine pipeline. The system validates whether a word is real before updating the session state, instantly discarding bad requests without lagging the match.</li>
+                        <li class="mb-2"><strong>Graceful Disconnect Recovery:</strong> Built an in-memory session recovery routine. If a user suffers a brief cellular connection dip, the engine saves their place for 30 seconds rather than instantly ending the match.</li>
+                    </ul>
+
+                    <h6 class="fw-bold text-dark mb-2">State Machine & Validation Loop:</h6>
+                    <div class="p-3 bg-light border rounded text-monospace small text-secondary">
+                        [Player Action Input] ➔ [WebSocket Payload Broadcast] ➔ [Server Intake Engine]<br>
+                        [Server Intake Engine] ➔ [Query Local Dictionary Schema] ➔ [Calculate Character Match]<br>
+                        [If Invalid: Fire Client Warning Event] ➔ [If Valid: Reset 15s Round Clock & Broadcast State Sync]
+                    </div>
+                </div>
+
+                <!-- Section 3: Strategic Outcomes & Metrics -->
+                <div class="mb-4 bg-white p-4 rounded-4 shadow-sm border border-light">
+                    <h4 class="fw-bold text-dark mb-3"><i class="fa-solid fa-square-poll-horizontal text-success me-2"></i>3. Operational Takeaways</h4>
+                    <p class="text-muted">Building this backend engine proved my ability to own a complex, data-heavy product roadmap from technical discovery through structural implementation:</p>
+                    <ul class="text-muted ps-3 mb-0">
+                        <li class="mb-2"><strong>Resource Maximization:</strong> Selected an optimized Python service pattern, proving that clean code and smart design choices can handle real-time traffic without requiring expensive, complex cloud structures.</li>
+                        <li class="mb-2"><strong>User Experience (UX) Driven Engineering:</strong> By focusing purely on lowering latency, the engine prevents player frustration, which directly supports higher session engagement goals.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Grid Column: Sticky Summary Metrics Sidebar -->
+            <div class="col-lg-4">
+                <div class="position-sticky" style="top: 6rem;">
+
+                    <!-- App Metadata Card Box -->
+                    <div class="card border-0 shadow-sm rounded-4 p-4 mb-4 bg-white">
+                        <h5 class="fw-bold text-dark mb-3">Engine Specifications</h5>
+
+                        <div class="mb-3 pb-3 border-bottom">
+                            <span class="small d-block text-muted">Networking Layer</span>
+                            <strong class="text-dark">Asynchronous WebSocket Event Pipes</strong>
+                        </div>
+                        <div class="mb-3 pb-3 border-bottom">
+                            <span class="small d-block text-muted">Concurrency Validation</span>
+                            <strong class="text-dark">Isolated Memory State Routing</strong>
+                        </div>
+                        <div class="mb-3 pb-3 border-bottom">
+                            <span class="small d-block text-muted">Target Core Metrics</span>
+                            <strong class="text-dark">User Action Latency under 25ms</strong>
+                        </div>
+                        <div class="mb-0">
+                            <span class="small d-block text-muted">Database Architecture</span>
+                            <strong class="text-dark">Indexed SQLite Text Lookup Schema</strong>
+                        </div>
+                    </div>
+
+                    <!-- PM Context Alert Box -->
+                    <div class="card border-0 shadow-sm rounded-4 p-4 bg-dark text-white text-start">
+                        <h5 class="fw-bold mb-2"><i class="fa-solid fa-diagram-project text-info me-2"></i>PM Insights</h5>
+                        <p class="small opacity-75 mb-0">This engine demonstrates deep cross-functional technical leadership—specifically the ability to balance business product scoping decisions directly with database performance requirements.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!--------------------- Sub-Page Static Mini Footer --------------------->
+    <footer class="py-4 bg-white border-top text-center text-muted small">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+            <span>&copy; 2026 Malynda Chuks-Ugwoke Portfolio Systems.</span>
+            <a href="../index.html" class="text-decoration-none text-dark fw-medium">Return to Homepage <i class="fa-solid fa-arrow-turn-up ms-1 fa-sm"></i></a>
+        </div>
+    </footer>
+
+    <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

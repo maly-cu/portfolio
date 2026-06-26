@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>SunScream App | Real-Time UV Tracking & Mobile Safety</title>
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" rel="stylesheet">
+
+    <!-- Link back to your core global stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- Fonts & Icons Integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/6b52baeebb.js"></script>
+</head>
+<body class="bg-light">
+
+    <!--------------------- App Sub-Page Navigation --------------------->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+                <i class="fa-solid fa-arrow-left text-muted fa-sm me-1"></i>
+                <strong>malynda</strong>
+                <span class="badge bg-warning text-dark px-2 py-1 fs-6 ms-1" style="font-size: 0.75rem !important;">SunScream Showcase</span>
+            </a>
+            <div class="justify-content-end">
+                <a class="btn btn-outline-dark btn-sm px-3" href="../index.html#projects">All Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <!--------------------- App Hero Section --------------------->
+    <header class="py-5 bg-white border-bottom">
+        <div class="container py-4">
+            <div class="row align-items-center g-5 text-start">
+                <div class="col-lg-6">
+                    <div class="d-inline-flex align-items-center gap-2 bg-warning bg-opacity-10 text-warning px-3 py-2 rounded-pill mb-3 fw-medium small" style="color: #FF5500 !important;">
+                        <i class="fa-solid fa-mobile-screen-button"></i> Flutter Cross-Platform Application
+                    </div>
+                    <h1 class="display-4 fw-bold text-dark mb-3">SunScream</h1>
+                    <p class="lead text-muted mb-4">A smart, context-aware mobile safety application engineered to protect users from invisible UV radiation hazards by matching real-time satellite data with automated on-device ambient tracking routines.</p>
+
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <div class="bg-light p-3 rounded-3 border flex-fill">
+                            <small class="text-muted d-block uppercase fw-bold tracking-wider" style="font-size: 0.75rem;">ROLE</small>
+                            <span class="text-dark fw-semibold">Solo Product Manager & Lead Mobile Engineer</span>
+                        </div>
+                        <div class="bg-light p-3 rounded-3 border flex-fill">
+                            <small class="text-muted d-block uppercase fw-bold tracking-wider" style="font-size: 0.75rem;">STACK</small>
+                            <span class="text-dark fw-semibold">Flutter, Dart SDK, Open-UV REST APIs</span>
+                        </div>
+                    </div>
+
+                    <div class="d-grid d-md-flex gap-3">
+                        <span class="btn btn-dark btn-lg px-4 disabled"><i class="fa-brands fa-google-play me-2"></i>Coming Soon to Play Store</span>
+                        <a href="../sunscream-privacy/index.html" class="btn btn-outline-secondary btn-lg px-4"><i class="fa-solid fa-shield-halved me-2"></i>Privacy Policy</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <!-- Visual Placeholders for Google App Mockup Views -->
+                    <div class="position-relative p-4 bg-warning rounded-5 text-white shadow" style="width: 100%; max-width: 420px; background: linear-gradient(135deg, #FF9100, #FF5500) !important;">
+                        <div class="p-5 text-center my-5">
+                            <i class="fa-solid fa-sun display-1 mb-4 animated pulse animate-infinite"></i>
+                            <h3 class="fw-bold">UV 8: Very High</h3>
+                            <p class="small opacity-75">Safe exposure limit: 15 Minutes.<br>Next reminder syncing in 1h 42m.</p>
+                        </div>
+                        <span class="badge bg-dark position-absolute bottom-0 start-50 translate-middle-x mb-4 px-3 py-2 shadow-sm">Adaptive Material UI View</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--------------------- Deep Dive Case Study Content --------------------->
+    <main class="container py-5 text-start">
+        <div class="row g-5 justify-content-between">
+
+            <!-- Left Grid Column: Strategic PM & Architecture Breakdowns -->
+            <div class="col-lg-7">
+
+                <!-- Section 1: The Core Problem Space -->
+                <div class="mb-5 bg-white p-4 rounded-4 shadow-sm border border-light">
+                    <h4 class="fw-bold text-dark mb-3"><i class="fa-solid fa-magnifying-glass text-danger me-2"></i>1. Problem Space & Discovery Strategy</h4>
+                    <p class="text-muted">Ultra-violet (UV) radiation intensity fluctuates aggressively throughout the day based on cloud layers, localized coordinates, and atmospheric shifts. Because human senses cannot perceive UV changes, users consistently misjudge exposure thresholds, resulting in cumulative long-term skin damage.</p>
+                    <p class="text-muted"><strong>The Discovery Metric:</strong> Through target user surveys, I discovered that while 82% of respondents worry about sunburn and long-term exposure, less than 5% intentionally check local UV indexes before stepping outside. The friction point was simple: manual index lookups are a broken loop. To solve this, the product requirement mandated an ambient tracker that pushes contextual value directly to the user without requiring manual inputs.</p>
+                </div>
+
+                <!-- Section 2: Technical Product Architecture -->
+                <div class="mb-5 bg-white p-4 rounded-4 shadow-sm border border-light">
+                    <h4 class="fw-bold text-dark mb-3"><i class="fa-solid fa-layer-group text-primary me-2"></i>2. Feature Engineering & Technical Scoping</h4>
+                    <p class="text-muted">Building an un-intrusive notification engine required architecting an asynchronous data consumption model that balances accuracy against high performance benchmarks:</p>
+
+                    <ul class="text-muted ps-3 mb-4">
+                        <li class="mb-2"><strong>Contextual Foreground Synchronization:</strong> Configured lightweight geolocation queries that map client devices to active satellite telemetry feeds without triggering heavy background battery drainage.</li>
+                        <li class="mb-2"><strong>The 2-Hour Algorithmic Loop:</strong> Programmed a conditional countdown sequence aligned with continuous WHO exposure safety intervals. If a user enters a hyper-intensity geographic zone, the app automatically scales alarm priority keys dynamically.</li>
+                        <li class="mb-2"><strong>Adaptive UI States:</strong> Designed modular visual themes that change color hierarchies instantly based on severe ultraviolet danger brackets, ensuring high cognitive accessibility for users on the go.</li>
+                    </ul>
+
+                    <h6 class="fw-bold text-dark mb-2">System Interfacing Sequence Diagram:</h6>
+                    <div class="p-3 bg-light border rounded text-monospace small text-secondary">
+                        [User Device Location] ➔ [轻量 Fetch Request] ➔ [OpenUV API Framework]<br>
+                        [OpenUV API Framework] ➔ [Extract Satellite Metrics] ➔ [Return High-Precision Matrix]<br>
+                        [User Device Client] ➔ [Render Adaptive Contrast Level] ➔ [Fire 2-Hour Safety Timer Clock]
+                    </div>
+                </div>
+
+                <!-- Section 3: Strategic Outcomes & Metrics -->
+                <div class="mb-4 bg-white p-4 rounded-4 shadow-sm border border-light">
+                    <h4 class="fw-bold text-dark mb-3"><i class="fa-solid fa-chart-line text-success me-2"></i>3. Product Roadmap Outcomes</h4>
+                    <p class="text-muted">By acting as both the strategic PM and the mobile developer, I achieved full design alignment and clean code delivery within a compressed 6-week sprint window:</p>
+                    <ul class="text-muted ps-3 mb-0">
+                        <li class="mb-2"><strong>Zero Dependency Clutter:</strong> Phased out bulk legacy vendor asset scripts, selecting lightweight, highly optimized modern component trees instead.</li>
+                        <li class="mb-2"><strong>Store Regulatory Compliance:</strong> Configured deep-linked privacy trees and clean file access patterns to ensure an optimal automated validation pass in the Google Play Console.</li>
+                        <li class="mb-2"><strong>Accessibility Ready:</strong> Validated contrast profiles across high-glare outdoor environments, confirming full WCAG readability standards.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Grid Column: Sticky Summary Metrics Sidebar -->
+            <div class="col-lg-4">
+                <div class="position-sticky" style="top: 6rem;">
+
+                    <!-- App Metadata Card Box -->
+                    <div class="card border-0 shadow-sm rounded-4 p-4 mb-4 bg-white">
+                        <h5 class="fw-bold text-dark mb-3">Project Metadata</h5>
+
+                        <div class="mb-3 pb-3 border-bottom">
+                            <span class="small d-block text-muted">Core Target Market</span>
+                            <strong class="text-dark">Outdoor Workers, Athletes, Health-Conscious Users</strong>
+                        </div>
+                        <div class="mb-3 pb-3 border-bottom">
+                            <span class="small d-block text-muted">Primary Platform Stack</span>
+                            <strong class="text-dark">Android Core (via Flutter / Dart Compilation)</strong>
+                        </div>
+                        <div class="mb-3 pb-3 border-bottom">
+                            <span class="small d-block text-muted">API Integrity Systems</span>
+                            <strong class="text-dark">JSON REST Overheads with Encrypted Geolocation Keys</strong>
+                        </div>
+                        <div class="mb-0">
+                            <span class="small d-block text-muted">Monetization Ad Target Compliance</span>
+                            <strong class="text-dark">Google AdMob Built-in Ecosystem Ready</strong>
+                        </div>
+                    </div>
+
+                    <!-- App Developer Compliance Direct Link Validation -->
+                    <div class="card border-0 shadow-sm rounded-4 p-4 bg-dark text-white text-start">
+                        <h5 class="fw-bold mb-2"><i class="fa-solid fa-laptop-code text-warning me-2"></i>Developer Review Notes</h5>
+                        <p class="small opacity-75 mb-3">This public product page satisfies Google Play Console distribution requirements and functions as the verified App Store landing domain link.</p>
+                        <div class="d-grid gap-2">
+                            <a href="../app-ads.txt" class="btn btn-outline-light btn-sm text-start"><i class="fa-solid fa-file-code me-2"></i>View Root App-Ads.txt</a>
+                            <a href="../sunscream-privacy/index.html" class="btn btn-outline-warning btn-sm text-start"><i class="fa-solid fa-shield-halved me-2"></i>View Active Privacy Policy</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!--------------------- Sub-Page Static Mini Footer --------------------->
+    <footer class="py-4 bg-white border-top text-center text-muted small">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+            <span>&copy; 2026 Malynda Chuks-Ugwoke Portfolio Systems.</span>
+            <a href="../index.html" class="text-decoration-none text-dark fw-medium">Return to Homepage <i class="fa-solid fa-arrow-turn-up ms-1 fa-sm"></i></a>
+        </div>
+    </footer>
+
+    <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

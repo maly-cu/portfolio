@@ -1,0 +1,52 @@
+:root {
+    /* Enhanced Color Palette Refinements */
+    --white-bckgrnd: #FFFFFF;
+    --grey-bckgrnd: #F8F9FA;
+    --header-txt-color: #1A1A1A;
+    --body-txt-color: #525266;
+    --pm-primary: #155DFC;
+    --dev-primary: #00A63E;
+    --des-primary: #9810FA;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--body-txt-color);
+    background-color: var(--white-bckgrnd);
+    line-height: 1.6;
+}
+
+/* Polished Flexbox Experience Cards */
+.experience-card {
+    text-align: left;
+    padding: 2.5rem;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+    height: auto; /* Replaced rigid 25rem to eliminate inner text clamping clipping rules */
+    background-color: var(--white-bckgrnd);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* Rounded Profile Configuration */
+.avatar {
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.avatar:hover {
+    transform: scale(1.03) rotate(1deg);
+}
+
+/* Navigation Utilities */
+.nav-link {
+    font-weight: 500;
+    color: var(--body-txt-color);
+    transition: color 0.2s ease;
+}
+.nav-link:hover {
+    color: var(--pm-primary) !important;
+}
