@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Data Safety & Privacy Hub | Malynda Chuks-Ugwoke</title>
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- Fonts & Icons Integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/6b52baeebb.js"></script>
+</head>
+<body class="bg-light">
+
+    <!--------------------- Navigation ---------------------->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="../">
+                <i class="fa-solid fa-arrow-left text-muted fa-sm me-1"></i>
+                <strong>malynda</strong>
+                <span class="badge bg-secondary text-white px-2 py-1 fs-6 ms-1" style="font-size: 0.75rem !important;">Application Suite Hub</span>
+            </a>
+            <div class="justify-content-end">
+                <a class="btn btn-outline-dark btn-sm px-3" href="../">Back to Portfolio</a>
+            </div>
+        </div>
+    </nav>
+
+    <!--------------------- Header --------------------->
+    <header class="py-5 bg-white border-bottom">
+        <div class="container text-start">
+            <h1 class="fw-bold text-dark mb-2">Application Data Safety & Privacy Hub</h1>
+            <p class="text-muted mb-0">Last Updated: June 26, 2026</p>
+            <p class="text-muted small mt-1">Select an active application profile below to audit its formal compliance parameters and user data rules.</p>
+
+            <!-- APPLICATION SWITCHER TABS -->
+            <ul class="nav nav-tabs mt-4 border-0 gap-2" id="privacyTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active border rounded-pill px-4 fw-medium" id="sunscream-tab" data-bs-toggle="tab" data-bs-target="#sunscream-pane" type="button" role="tab" aria-controls="sunscream-pane" aria-selected="true">
+                        <i class="fa-solid fa-cloud-sun me-2 text-warning"></i>SunScream Mobile
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link border rounded-pill px-4 fw-medium text-muted" id="wordchain-tab" data-bs-toggle="tab" data-bs-target="#wordchain-pane" type="button" role="tab" aria-controls="wordchain-pane" aria-selected="false">
+                        <i class="fa-solid fa-gamepad me-2 text-primary"></i>Word Chain: Rivals
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!--------------------- Tab Content Wrapper --------------------->
+    <main class="container py-5" style="max-width: 850px;">
+        <div class="tab-content id="privacyTabContent">
+
+            <!-- ================== SUNSCREAM PRIVACY PANE ================== -->
+            <div class="tab-pane fade show active" id="sunscream-pane" role="tabpanel" aria-labelledby="sunscream-tab" tabindex="0">
+                <div class="card shadow-sm border-0 p-4 p-md-5 bg-white">
+                    <section class="mb-4">
+                        <h4 class="fw-bold text-dark"><i class="fa-solid fa-circle-info text-primary me-2 fa-sm"></i>1. Overview</h4>
+                        <p class="text-muted">Malynda Chuks-Ugwoke ("we", "our", or "us") operates the SunScream mobile application as a free commercial product. This service is provided by us at no out-of-pocket cost and is intended for use as-is. This page informs application users regarding our exact structural rules and compliance parameters collecting, utilizing, and disclosing personal data profiles.</p>
+                    </section>
+
+                    <section class="mb-4">
+                        <h4 class="fw-bold text-dark"><i class="fa-solid fa-location-crosshairs text-warning me-2 fa-sm"></i>2. Information Collection and Usage Requirements</h4>
+                        <p class="text-muted">To provide continuous, automated real-time ultraviolet monitoring, the application requires specific context permissions. The data processed is segmented below:</p>
+
+                        <div class="p-3 bg-light rounded-3 mb-3">
+                            <h6 class="fw-bold text-dark mb-1">A. Real-Time Geolocation Data</h6>
+                            <p class="small text-muted mb-0">The application requires background/foreground device location coordinates to poll satellite atmospheric sensors. This geographical information is processed purely on-device and forwarded anonymously to our external meteorological framework (OpenUV API) to pull accurate hazard indices. **We do not save or log your location tracking history on any external proprietary servers.**</p>
+                        </div>
+
+                        <div class="p-3 bg-light rounded-3">
+                            <h6 class="fw-bold text-dark mb-1">B. Device Identification Logs</h6>
+                            <p class="small text-muted mb-0">Standard device log information (such as operating system versions, individual internal hardware configurations, and performance crash intervals) may be processed temporarily by third-party tracking kits to guarantee application software stability updates.</p>
+                        </div>
+                    </section>
+
+                    <section class="mb-4 border-top pt-4" id="data-policy">
+                        <h4 class="fw-bold text-dark"><i class="fa-solid fa-shield-halved text-info me-2 fa-sm"></i>3. App Data Policy & Data Safety Mandate</h4>
+                        <p class="text-muted">In strict accordance with Google Play Developer Policies and global Data Safety standards, we maintain complete transparency regarding data handling transparency metrics:</p>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="p-3 border rounded-3 h-100 bg-light bg-opacity-50">
+                                    <h6 class="fw-bold text-dark"><i class="fa-solid fa-lock text-success me-2"></i>Data Encryption</h6>
+                                    <p class="small text-muted mb-0">All analytical logs or system data handling generated transiently by the app are transmitted strictly via encrypted channels (HTTPS/TLS protocols) during transit to prevent unauthorized intercept routines.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-3 border rounded-3 h-100 bg-light bg-opacity-50">
+                                    <h6 class="fw-bold text-dark"><i class="fa-solid fa-trash-can text-danger me-2"></i>Data Deletion Rights</h6>
+                                    <p class="small text-muted mb-0">Since SunScream processes location context temporarily and doesn't manage account setups on external databases, no user profiling traits are stored. You can request absolute data wipe verification by emailing our helpdesk.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mb-4">
+                        <h4 class="fw-bold text-dark"><i class="fa-solid fa-rectangle-ad text-success me-2 fa-sm"></i>4. Third-Party Service Provider Frameworks</h4>
+                        <p class="text-muted">The app utilizes external monetization and development software bundles that may capture user attributes governed independently by their own respect rules. Below are links directly to the privacy data documentation of our third-party service pipelines:</p>
+                        <ul class="text-muted ps-3">
+                            <li class="mb-2"><a href="https://policies.google.com/privacy" target="_blank" class="text-primary text-decoration-none fw-medium">Google Play Services Data Rules</a></li>
+                            <li class="mb-2"><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" class="text-primary text-decoration-none fw-medium">Google AdMob Monetization Disclosure Policy</a></li>
+                        </ul>
+                    </section>
+
+                    <section class="mb-4">
+                        <h4 class="fw-bold text-dark"><i class="fa-solid fa-cookie-bite text-secondary me-2 fa-sm"></i>5. Tracking and Cookies</h4>
+                        <p class="text-muted">Cookies are files containing miniature datasets commonly deployed as anonymous identification trackers. SunScream does not configure or initialize native browser cookies explicitly. However, third-party code elements or mobile advertising software development kits (SDKs) may inject systemic operational tokens to optimize contextual ad layout spaces.</p>
+                    </section>
+
+                    <section class="mb-4">
+                        <h4 class="fw-bold text-dark"><i class="fa-solid fa-user-shield text-danger me-2 fa-sm"></i>6. Child Data Protection Mandate</h4>
+                        <p class="text-muted">Our operational features do not directly address or target audiences under the age of 13. We do not knowingly compile or interact with personal traits associated with children. In any event where discovery metrics indicate a child under 13 has bypassed validation checkpoints and left data trails, we execute instant wipe scripts across all volatile tracking channels.</p>
+                    </section>
+
+                    <section class="mb-0">
+                        <h4 class="fw-bold text-dark"><i class="fa-solid fa-envelope text-dark me-2 fa-sm"></i>7. Contact Inquiries</h4>
+                        <p class="text-muted mb-0">Contact our administration desk directly via email at: <a href="mailto:malynda.chuks@gmail.com" class="text-dark fw-bold text-decoration-none">malynda.chuks@gmail.com</a>.</p>
+                    </section>
+                </div>
+            </div>
+
+            <!-- ================== WORD CHAIN PRIVACY PANE ================== -->
+            <div class="tab-pane fade" id="wordchain-pane" role="tabpanel" aria-labelledby="wordchain-tab" tabindex="0">
+                <div class="card shadow-sm border-0 p-4 p-md-5 bg-white">
+                    <div class="text-center py-4">
+                        <div class="display-4 text-muted mb-3"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h4 class="fw-bold text-dark">Word Chain: Rivals Data Infrastructure</h4>
+                        <p class="text-muted mx-auto" style="max-width: 500px;">This module is mapping real-time synchronization pipelines. Full matchmaking privacy configurations and operational tokens will unlock concurrently with our upcoming production deployment build cycle.</p>
+
+                        <div class="p-3 bg-light rounded-3 text-start mt-4">
+                            <h6 class="fw-bold text-dark mb-1"><i class="fa-solid fa-shield me-2 text-primary"></i>Preliminary Architecture Preview:</h6>
+                            <p class="small text-muted mb-0 mt-2"><strong>Data Scope:</strong> Word Chain handles authentication tokens, multiplayer lobby session states, and competitive matchmaking scoreboards. No persistent demographic profiles or deep hardware identification metrics are retained on external tracking servers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!--------------------- Footer --------------------->
+    <footer class="py-4 bg-white border-top text-center text-muted small mt-5">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+            <span>&copy; 2026 Malynda Chuks-Ugwoke. All Rights Reserved.</span>
+            <a href="../" class="text-decoration-none text-dark fw-medium">Return to Portfolio Hub <i class="fa-solid fa-arrow-turn-up ms-1 fa-sm"></i></a>
+        </div>
+    </footer>
+
+    <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
