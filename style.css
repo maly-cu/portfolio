@@ -10,7 +10,7 @@
 }
 
 .dot{
-    font-size:.2rem;
+    font-size:.1rem;
     padding: 0 0.5rem;
     color:var(--body-txt-color);
     /*align-self: center; /* Centers this specific item */
