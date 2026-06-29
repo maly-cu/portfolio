@@ -153,6 +153,35 @@
         </div>
     </footer>
 
+<!-- Bootstrap 5 JS Bundle -->
     <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Deep Linking Tab JavaScript Switcher -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Check if there is a hash in the URL (e.g., #wordchain or #sunscream)
+            const hash = window.location.hash;
+            if (hash) {
+                // Find the tab button that matches the target pane ID
+                const targetPaneId = hash + "-pane"; // results in #wordchain-pane
+                const tabButton = document.querySelector(`[data-bs-target="${targetPaneId}"]`);
+
+                if (tabButton) {
+                    // Initialize and trigger the Bootstrap tab show action
+                    const tab = new bootstrap.Tab(tabButton);
+                    tab.show();
+                }
+            }
+
+            // Update the URL hash dynamically when a user clicks a tab manually
+            const tabButtons = document.querySelectorAll('[data-bs-toggle="tab"]');
+            tabButtons.forEach(button => {
+                button.addEventListener('shown.bs.tab', function (e) {
+                    const targetId = e.target.getAttribute('data-bs-target').replace('-pane', '');
+                    history.replaceState(null, null, targetId);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
