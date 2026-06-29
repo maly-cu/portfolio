@@ -9,6 +9,13 @@
     --des-primary: #9810FA;
 }
 
+.dot{
+    font-size:.2rem;
+    padding: 0 0.5rem;
+    color:var(--body-txt-color);
+    /*align-self: center; /* Centers this specific item */
+}
+
 body {
     font-family: 'Inter', sans-serif;
     color: var(--body-txt-color);
