@@ -6,15 +6,9 @@
     --body-txt-color: #525266;
     --pm-primary: #155DFC;
     --dev-primary: #00A63E;
-    --des-primary: #9810FA;
+    --des-primary: #F4B400;
 }
 
-.dot{
-    font-size:0.5rem;
-    /*padding: 0 0.5rem;*/
-    color:var(--body-txt-color);
-    /*align-self: center; /* Centers this specific item */
-}
 
 body {
     font-family: 'Inter', sans-serif;
